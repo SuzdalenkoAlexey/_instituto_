@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>						<!-- es de convenio usar comillas dobles "" en vez simples '' -->
+<!DOCTYPE discoteca>										<!-- !DOCTYPE discoteca no es obligatorio el DOCTYPE -->
+<discoteca>
+	<album>
+		<cantante tipo=solista>Harry Styles</cantante>      <!-- faltan dobles comillas tipo="solista" -->
+		<titulo numerodepistas=13>Harry's House</titulo>	<!-- faltan dobles comillas numerodepistas="13" -->
+		<datos album_de_estudio=si,year=2022></datos>		<!-- sobra la coma y faltan dobles comillas album_de_estudio="si" year="2022" -->
+		<canciones>											<!-- falta etiqueta de cierre </canciones> --> 
+			<cancion>As It Was								<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Love of My Life						<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Daylight								<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Daylight								<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Little Freak							<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Satellite								<!-- falta etiqueta de cierre </cancion> -->
+		</pistas>											<!-- falta etiqueta de apertura <pistas> -->
+	</album>
+	<album>
+		<cantante tipo=grupo>Imagine Dragons</cantante>     <!-- faltan comillas "grupo" -->
+		<componentes>
+			<componente role=solista>Dan Revnolds			<!-- falta etiquetas de cierre </componente> y comillas "solista" --> 
+			<componente role=guitarrista>Daniel Wavne 		<!-- falta etiquetas de cierre </componente> y comillas "guitarrista" --> 
+			<componente role=baterista>Daniel Platzman 		<!-- falta etiquetas de cierre </componente> y comillas "baterista" --> 
+			<componente role=bajo>Ben McKee 				<!-- falta etiquetas de cierre </componente> y comillas "bajo" --> 
+			<componente role=piano>DANiiVORY				<!-- falta etiquetas de cierre </componente> y comillas "piano" --> 
+		</componentes>
+		<titulo numerodepistas=23>Live in Vegas</titulo>	<!-- faltan comillas "23" -->
+		<datos album_de_estudio=no,year=2023></datos>		<!-- sobra la coma y faltan comillas "no" "2023" -->
+		<canciones>											<!-- falta etiqueta de cierre </canciones> --> 
+			<cancion>Bones 									<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Demons									<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Sharks									<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Believer								<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Next to me								<!-- falta etiqueta de cierre </cancion> -->
+			<cancion>Enemy									<!-- falta etiqueta de cierre </cancion> -->
+		</pistas>											<!-- falta etiqueta de apertura <pistas> -->								
+	</album>
+</Discoteca>												<!-- la etiquete de cierre tenia que ser </discoteca> con d minuscula -->
+        

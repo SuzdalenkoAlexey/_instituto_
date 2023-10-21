@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<carta>
+    <platos grupo="ensaladas">
+        <plato nombre="Ensalada Mixta" precio="3.40" fechaPlatoSaleDeCarta="2023-01-01" >
+            <ingredientes>
+                <ingrediente>lechuga</ingrediente>
+                <ingrediente>tomate</ingrediente>
+                <ingrediente>cebolla</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="1" mes="enero" agno="2023" />
+        </plato>
+        <plato nombre="Ensalada Cesar" precio="4.50" fechaPlatoSaleDeCarta="2023-01-02">
+            <ingredientes>
+                <ingrediente>lechuga</ingrediente>
+                <ingrediente>nuces</ingrediente>
+                <ingrediente>frutos secos</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="2" mes="febrero" agno="2023" />
+        </plato>
+        <plato nombre="Ensalada Con Queso" precio="5.60" fechaPlatoSaleDeCarta="2023-01-03">
+            <ingredientes>
+                <ingrediente>lechuga</ingrediente>
+                <ingrediente>queso de cabra loca</ingrediente>
+                <ingrediente>frutos secos</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="3" mes="marzo" agno="2023" />
+        </plato>
+    </platos>
+    <platos grupo="pizzas">
+        <plato nombre="Napolitana" precio="6.70" fechaPlatoSaleDeCarta="2023-01-04">
+            <ingredientes>
+                <ingrediente>carne picada</ingrediente>
+                <ingrediente>sal</ingrediente>
+                <ingrediente>tomate</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="4" mes="enero" agno="2023" />
+        </plato>
+        <plato nombre="Fria" precio="7.60" fechaPlatoSaleDeCarta="2023-01-05">
+            <ingredientes>
+                <ingrediente>queso picado</ingrediente>
+                <ingrediente>manzana</ingrediente>
+                <ingrediente>jamon york</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="5" mes="agosto" agno="2023" />
+        </plato>
+    </platos>
+    <platos grupo="postres">
+        <plato nombre="Mazedonia" precio="3.50" fechaPlatoSaleDeCarta="2023-01-06">
+            <ingredientes>
+                <ingrediente>platano</ingrediente>
+                <ingrediente>quivi</ingrediente>
+                <ingrediente>pera</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="6" mes="abril" agno="2024" />
+        </plato>
+        <plato nombre="Tarta" precio="3.50" fechaPlatoSaleDeCarta="2099-01-01">
+            <ingredientes>
+                <ingrediente>leche</ingrediente>
+                <ingrediente>huevo</ingrediente>
+                <ingrediente>chocolate</ingrediente>
+            </ingredientes>
+            <fechaDeEntrada dia="23" mes="febrero" agno="2024" />
+        </plato>
+    </platos>
+</carta>

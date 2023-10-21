@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<discoteca>
+	<album>
+		<cantante tipo="solista">Harry Styles</cantante>     
+		<titulo numerodepistas="13">Harry's House</titulo>	
+		<datos album_de_estudio="si" year="2022"></datos>		
+		<canciones>										
+			<cancion>As It Was</cancion>							
+			<cancion>Love of My Life</cancion>					
+			<cancion>Daylight</cancion>								
+			<cancion>Daylight</cancion>									
+			<cancion>Little Freak</cancion>								
+			<cancion>Satellite</cancion>	
+		</canciones>									
+		<pistas />											
+	</album>
+	<album>
+		<cantante tipo="grupo">Imagine Dragons</cantante>    
+		<componentes>
+			<componente role="solista">Dan Revnolds</componente>
+			<componente role="guitarrista">Daniel Wavne</componente>	
+			<componente role="baterista">Daniel Platzma</componente>
+			<componente role="bajo">Ben McKee</componente>
+			<componente role="piano">DANiiVORY</componente>
+		</componentes>
+		<titulo numerodepistas="23">Live in Vegas</titulo>
+		<datos album_de_estudio="no" year="2023"></datos>		
+		<canciones>											
+			<cancion>Bones </cancion>					
+			<cancion>Demons</cancion>					
+			<cancion>Sharks</cancion>					
+			<cancion>Believer</cancion>					
+			<cancion>Next to me</cancion>					
+			<cancion>Enemy</cancion>
+		</canciones>									
+		<pistas />																
+	</album>
+</discoteca>											
+        

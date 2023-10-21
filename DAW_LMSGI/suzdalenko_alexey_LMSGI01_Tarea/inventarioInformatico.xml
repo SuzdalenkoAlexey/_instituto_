@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inventario>
+    <equipo identificativo="eq1344" tipo="CPU Torre">
+        <caracteristicas fabricante="DELL" modelo="Inspiron Small Desktop" memoria="8GB" procesador="Intel Core i7 - 10700F">
+            <disco tipo="SSD" capacidad="512 Gb" />
+        </caracteristicas>
+        <numeroSerie>DL3996626F33</numeroSerie>
+        <fechaDeAdquisicion dia="12" mes="marzo" agno="2021" />
+        <ubicacion departamento="Informática y Comunicaciones" aula="A31" />
+        <tipoImpresion></tipoImpresion>
+    </equipo>
+    <equipo identificativo="eq1344" tipo="impresora">
+        <caracteristicas fabricante="HP" modelo="DeskJet 2721e" memoria="" procesador="">
+            <disco tipo="" capacidad="" />
+        </caracteristicas>
+        <numeroSerie>HP78664543</numeroSerie>
+        <fechaDeAdquisicion dia="16" mes="enero" agno="2022" />
+        <ubicacion departamento="Administración y Gestión" aula="A27" />
+        <tipoImpresion>impresión por tinta</tipoImpresion>
+    </equipo>
+</inventario>
