@@ -1,3 +1,4 @@
+# ABRIR CMD COMO ADMINISTRADOR
 // Nos conectamos en SQLPLUS como administradores con la sentencia
 sqlplus sys as sysdba
 // Para mostrar el usuario y la base de datos actual utilizamos el comando show
