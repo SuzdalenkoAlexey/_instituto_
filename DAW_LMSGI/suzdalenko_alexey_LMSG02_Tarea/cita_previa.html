@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Previa - MadiFP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <a href="index.html">
+                <img src="img/img_cabecera.png" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="nav_link" href="index.html">Inicio</a></li>
+                    <li><a class="nav_link" href="exposicion.html">Exposicion</a></li>
+                    <li><a class="nav_link" href="cita_previa.html">Cita Previa</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="expo_page">
+            <aside class="child1">
+                <img src="img/cartel_madif.jpg" class="expo_img">
+                <h3>Exposición</h3>
+                <p>En la planta del departamiento de Informatica y Comunicaciones</p>
+                <p>Horario de 9:00 a 13:00 y de 16:00 a 18:00</p>
+                <p>Visitas individuales y grupales</p>
+                <p>Entrada gratuita</p>
+                <br>
+                <br>
+                <h3>Más informacion:</h3>
+                <p><a href="https://www.iesaglinares.com/" class="expo_a">IES Augusto González de Linares – Santander</a></p>
+                <p>Avda Primero de Mayo, 1</p>
+                <p>39011 - Santander</p>
+                <p>Tlfno. +34942337411</p>
+            </aside>
+            <article class="child2">
+                <div class="div_center">
+                    <h3>Formulario para solicitar visita a la exposición</h3>
+                </div>
+                <form method="POST"  action="cita@madif_linares.es" >
+                    <fieldset class="contact_data">
+                        <legend>Datos de contacto</legend>
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" />
+                        <label for="second_name">Apellidos:</label>
+                        <input id="second_name" type="text" /><br><br>
+                        <label for="email">Correo electónico:</label>
+                        <input id="email" type="email" /><br><br>
+                        <label for="si_el_caso">Si el caso, nombre del colegio/instituto:</label>
+                        <input id="si_el_caso" type="text" />
+                    </fieldset>
+                    <br>
+                    <fieldset  class="contact_data">
+                        <legend>¿Tipo de visita?</legend>
+                        <input id="visita_ind" type="radio" />
+                        <label for="visita_ind">Visita individual</label>
+                        <input id="visita_grupo" type="radio" />
+                        <label for="visita_grupo">Visita de grupo</label>
+                    </fieldset>
+                    <br>
+                    <fieldset  class="contact_data">
+                        <legend>¿Como conociste nuestro museo?</legend>
+                        <input id="" type="radio" />
+                        <label for="">A través de las redes</label>
+                        <input id="" type="radio" />
+                        <label for="">Por internet</label>
+                        <input id="" type="radio" />
+                        <label for="">Por artículo de prensa</label>
+                        <input id="" type="radio" />
+                        <label for="">A través del colegio/instituto</label>
+                    </fieldset>
+                    <textarea placeholder="Indicános tus preferencias, número de asistentes e informacion de su perfil:" class="contact_data"></textarea>
+                    <div class="sender_div">
+                        <input type="submit" value="Enviar">
+                        <input type="button" value="Borrar formulario">
+                    </div>
+                </form>
+            </article>
+        </section>
+        <footer>
+            <hr />
+            <div class="div_center">
+                <a href="https://www.iesaglinares.com/" class="footer_link"><h4>MadiFP</h4></a>
+            </div>
+        </footer>    
+    </div>
+</body>
+</html>

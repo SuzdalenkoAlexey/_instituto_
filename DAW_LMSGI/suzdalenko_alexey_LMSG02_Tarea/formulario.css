@@ -1,0 +1,24 @@
+h3{
+    color: black;
+}
+form{
+    border: 1px solid rgb(197, 196, 196);
+    color: black;
+}
+.contact_data{
+    margin: 11px;
+    border: 1px solid rgb(197, 196, 196);
+}
+#second_name{
+    width: 277px;
+}
+#email, #si_el_caso{
+    width: 377px;
+}
+.sender_div{
+    padding: 22px;
+}
+textarea{
+    width: 96%;
+    height: 77px;
+}
