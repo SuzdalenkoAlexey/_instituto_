@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de parentesis</title>
+</head>
+<body>
+    <p>Contador de parentesis</p>
+    <input type="text" id="miInput">
+    <br><br>
+    <div id="textoEscrito"></div>
+    <br>
+    <div id="validador">bien</div>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            margin-top: 22px;
+            margin-left: 5%;
+            width: 90%;
+        }
+        input{
+            width: 100%;
+        }
+        #validador{
+            color: white;
+            padding: 3px;
+        }
+    </style>
+    <script>
+        function validarTexto(){
+            let par1  = 0;
+            let par2  = 0;
+            
+            let textoEscrito = document.getElementById('textoEscrito')
+            let miText = document.getElementById('miInput')
+            textoEscrito.innerHTML = miText.value
+
+            let arrayString = miText.value.split('')
+            console.log(arrayString)
+            for(let i = 0; i < arrayString.length; i++){
+                if(arrayString[i] == '('){
+                    par1++;
+                    
+                }
+                if(arrayString[i] == ')'){
+                    par2++;  
+                    
+                }
+            }
+            if(par1 == par2){
+                document.getElementById('validador').innerHTML = "bien";
+                document.getElementById('validador').style.backgroundColor = "green";
+            } else {
+                document.getElementById('validador').innerHTML = "MAL, ALGO PASA CON LOS PARENTESIS";
+                document.getElementById('validador').style.backgroundColor = "red";
+            }
+            console.log('sentenciaAbierta='+sentenciaAbierta)
+        }
+
+        // setInterval(() => validarTexto(), 1000)
+
+        // fetch('http://192.168.1.131/backendfroxa/public/index.php/api/comprobar_parentesis')
+
+
+        function validarParentesis(expresion) {
+            const stack = [];
+            const parentesisAbiertos = ["(", "{", "["];
+            const parentesisCerrados = [")", "}", "]"];
+
+            for (let i = 0; i < expresion.length; i++) {
+                const caracter = expresion[i];
+            
+                if (parentesisAbiertos.includes(caracter)) {
+                    stack.push(caracter);
+                } else if (parentesisCerrados.includes(caracter)) {
+                    const parentesisAbiertoCorrespondiente = parentesisAbiertos[parentesisCerrados.indexOf(caracter)];
+                    if (stack.length === 0 || stack.pop() !== parentesisAbiertoCorrespondiente) {
+                        return false;
+                    }
+                }
+            }
+            console.log(expresion)
+            return stack.length === 0;
+        }
+
+        setInterval(() => {
+            let miTextInput = document.getElementById('miInput').value
+            document.getElementById('textoEscrito').innerHTML = miTextInput
+            let result = validarParentesis(miTextInput)
+            if(result){
+                document.getElementById('validador').innerHTML = "bien";
+                document.getElementById('validador').style.backgroundColor = "green";
+            } else {
+                document.getElementById('validador').innerHTML = "MAL, ALGO PASA CON LOS PARENTESIS";
+                document.getElementById('validador').style.backgroundColor = "red";
+            }
+        }, 1000)
+
+        
+
+    </script>
+</body>
+</html>
