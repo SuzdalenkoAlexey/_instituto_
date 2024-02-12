@@ -12,10 +12,14 @@ public class Calculadora {
         // Casos de prueba básicos
         System.out.println("Caso de prueba básico 1: " + (sumar(2, 3) == 5));
         System.out.println("Caso de prueba básico 2: " + (sumar(-5, 8) == 3));
-
+        // Z:\Laboratorio\ANALISIS MICRO_2023.xlsx
         // Límites inferiores y superiores
         System.out.println("Caso de prueba límite inferior: " + (sumar(Integer.MIN_VALUE, -1) == Integer.MIN_VALUE - 1));
         System.out.println("Caso de prueba límite superior: " + (sumar(Integer.MAX_VALUE, 1) == Integer.MAX_VALUE));
+        
+        System.out.println("CUANTO VA A SER ESTA SUMA "+sumar(Integer.MAX_VALUE, 0));
+        System.out.println("CUANTO VA A SER ESTA SUMA "+sumar(Integer.MAX_VALUE, 1));
+        System.out.println("CUANTO VA A SER ESTA SUMA "+sumar(Integer.MAX_VALUE, -1));
 
         // Valores extremos
         System.out.println("Caso de prueba valores extremos: " + (sumar(0, Integer.MAX_VALUE) == Integer.MAX_VALUE));
