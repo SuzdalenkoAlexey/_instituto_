@@ -57,4 +57,9 @@ public class Legends {
         System.out.println(dinosaurius);
         System.out.println(menu);
     }
+    
+     public void inicioApp(){
+        System.out.println(festival);
+        System.out.println(menu);
+    }
 }
