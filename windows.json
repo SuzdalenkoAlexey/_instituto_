@@ -1,0 +1,19 @@
+diskpart (administrador de equipos > administrador de discos)
+    list disk
+    select disk 1
+    create partition primary
+    format fs=ntfs label=suzdalenko1 quick
+    assign letter=Q
+
+    list disk
+    list volumen
+    select disk 1   
+    online disk
+    attribute disk
+    attribute disk clear readonly
+    convert dynamic
+    create volume raid disk=1,2,3,4
+    assign letter=X
+    format fs=ntfs label=Datos quick
+    selelect disk M0
+    delete disk

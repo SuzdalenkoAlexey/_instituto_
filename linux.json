@@ -1,0 +1,28 @@
+su          -> change user to root
+nano visudo -> edit visudo "%sudo ALL=(ALL:ALL) ALL"
+
+# añadir usuario a sudoers file
+    su -   -> cambiamos usuario a root
+    visudo -> editamos este archivo
+    %sudo   ALL=(ALL:ALL) ALL
+    asuzdalenko01   ALL=(ALL:ALL) ALL
+
+# montar un disko nuevo
+    lsblk               -> show list disk data
+    sudo fdisk /dev/sdb -> crear particion GPT
+                      g -> crear GPT particion
+                      w -> guardar cambios 
+    sudo fdisk -l /dev/sdb -> compruebo que disklabel es GPT
+    sudo fdisk /dev/sdb -> crear primera particion
+                      n -> crear primera particion
+                      ok
+                      ok
+                      w -> guardar cambios  
+    sudo mkdir -p /mnt/disco-backup
+    sudo mkfs.ext4 /dev/sdb1 -> formatear disco ext4
+    sudo mount /dev/sdb1 /mnt/disco-backup - montar disco en /mnt/disco-backup
+    sudo nano /etc/fstab -> editar archivo configuaracion para que el disco se monte automaticamente
+    /dev/sdX1   /mnt/disco-backup   ext4   defaults   0   2 -> añado al final del archivo
+
+ls -ld /mnt/disco-backup -> mostrar permisos de carpeta
+sudo chmod a+w /mnt/disco-backup -> dar permisos de escritura a todos los usuarios
