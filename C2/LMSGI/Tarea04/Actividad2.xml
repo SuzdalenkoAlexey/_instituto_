@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!DOCTYPE jugadores [
+    <!ELEMENT jugadores (jugador+)>
+    <!ELEMENT jugador (nombre_jugador, fecha_nacimiento, nacionalidad, altura, peso, estadisticas, equipos_anteriores, posiciones)>
+    <!ATTLIST jugador id CDATA #REQUIRED>
+
+    <!ELEMENT nombre_jugador (#PCDATA)>
+    <!ELEMENT fecha_nacimiento (#PCDATA)>
+    <!ELEMENT nacionalidad (#PCDATA)>
+    <!ELEMENT altura (#PCDATA)>
+    <!ELEMENT peso (#PCDATA)>
+
+    <!ELEMENT estadisticas (partidos_jugados, goles_anotados, asistencias, tarjetas_amarillas, tarjetas_rojas)>
+    <!ELEMENT partidos_jugados (#PCDATA)>
+    <!ELEMENT goles_anotados (#PCDATA)>
+    <!ELEMENT asistencias (#PCDATA)>
+    <!ELEMENT tarjetas_amarillas (#PCDATA)>
+    <!ELEMENT tarjetas_rojas (#PCDATA)>
+
+    <!ELEMENT equipos_anteriores (equipo+)>
+    <!ELEMENT equipo (nombre_equipo, inicio, fin?, logros*)>
+    <!ELEMENT nombre_equipo (#PCDATA)>
+    <!ELEMENT inicio (#PCDATA)>
+    <!ELEMENT fin (#PCDATA)>
+    <!ELEMENT logros (logro*)>
+    <!ELEMENT logro (titulo, veces_conquistado)>
+
+    <!ELEMENT posiciones (principal, secundarias)>
+    <!ELEMENT principal (posicion)>
+    <!ELEMENT secundarias (posicion+)>
+    <!ELEMENT posicion (#PCDATA)>
+]>
+<jugadores>
+    <jugador id="J0001/01">
+		<nombre_jugador>Lionel Messi</nombre_jugador>
+        <fecha_nacimiento>1987-06-24</fecha_nacimiento>
+		<nacionalidad>Argentina</nacionalidad>
+        <altura>170</altura>
+        <peso>72</peso>
+        <estadisticas>
+			<partidos_jugados>800</partidos_jugados>
+            <goles_anotados>700</goles_anotados>
+            <asistencias>300</asistencias>
+            <tarjetas_amarillas>30</tarjetas_amarillas>
+            <tarjetas_rojas>1</tarjetas_rojas>
+        </estadisticas>
+        <equipos_anteriores>
+            <equipo>
+				<nombre_equipo>FC.Barcelona</nombre_equipo>
+				<inicio>2004</inicio>
+				<fin>2021</fin>
+                <logros>
+					<logro>
+						<titulo>Liga Española</titulo>
+						<veces_conquistado>10</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Liga Campeones de la UEFA</titulo>
+						<veces_conquistado>4</veces_conquistado>
+					</logro>
+                </logros>
+            </equipo>
+            <equipo>
+				<nombre_equipo>Paris Saint-Germain</nombre_equipo>
+				<inicio>2021</inicio>
+				<fin>2022</fin>
+				<logros>
+					<logro>
+						<titulo>Ligue 1</titulo>
+						<veces_conquistado>1</veces_conquistado>
+					</logro>
+                </logros>  
+            </equipo>
+            <equipo>
+				<nombre_equipo>Inter Miami</nombre_equipo>
+				<inicio>2023</inicio>
+				<fin/>
+                <logros/>
+            </equipo>
+        </equipos_anteriores>
+        <posiciones>
+            <principal>
+                <posicion>delantero</posicion>
+            </principal>
+            <secundarias>
+                <posicion>extremo</posicion>
+                <posicion>segundo delantero</posicion>
+            </secundarias>
+        </posiciones>
+	</jugador>
+    <jugador id="J0002/01">
+		<nombre_jugador>Cristiano Ronaldo</nombre_jugador>
+        <fecha_nacimiento>1985-02-05</fecha_nacimiento>
+        <nacionalidad>Portuguesa</nacionalidad>
+        <altura>187</altura>
+        <peso>83</peso>
+        <estadisticas>
+            <partidos_jugados>850</partidos_jugados>
+            <goles_anotados>750</goles_anotados>
+            <asistencias>200</asistencias>
+            <tarjetas_amarillas>20</tarjetas_amarillas>
+            <tarjetas_rojas>1</tarjetas_rojas>
+        </estadisticas>
+        <equipos_anteriores>
+            <equipo>	
+				<nombre_equipo>Sporting Lisboa</nombre_equipo>
+				<inicio>2002</inicio>
+				<fin>2003</fin>
+                <logros>
+					<logro>
+						<titulo>Primeira Liga</titulo>
+						<veces_conquistado>1</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Liga Campeones de la UEFA</titulo>
+						<veces_conquistado>4</veces_conquistado>
+					</logro>
+                </logros>
+            </equipo>
+            <equipo>
+				<nombre_equipo>Manchester United</nombre_equipo>
+				<inicio>2003</inicio>
+				<fin>2009</fin>
+                <logros>
+					<logro>
+						<titulo>Premier League</titulo>
+						<veces_conquistado>3</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Liga Campeones de la UEFA</titulo>
+						<veces_conquistado>1</veces_conquistado>
+					</logro>
+                </logros>
+            </equipo>
+            <equipo>
+				<nombre_equipo>Real Madrid</nombre_equipo>
+				<inicio>2009</inicio>
+				<fin>2018</fin>
+                <logros>
+					<logro>
+						<titulo>Liga</titulo>
+						<veces_conquistado>2</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Liga Campeones de la UEFA</titulo>
+						<veces_conquistado>4</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Copa del Rey</titulo>
+						<veces_conquistado>2</veces_conquistado>
+					</logro>
+                </logros>
+            </equipo>
+            <equipo>
+				<nombre_equipo>Juventus</nombre_equipo>
+				<inicio>2018</inicio>
+				<fin>2021</fin>
+                <logros>
+					<logro>
+						<titulo>Serie A</titulo>
+						<veces_conquistado>2</veces_conquistado>
+					</logro>
+					<logro>
+						<titulo>Supercoppa italiana</titulo>
+						<veces_conquistado>1</veces_conquistado>
+					</logro>
+                </logros>
+            </equipo>
+			 <equipo>
+				<nombre_equipo>Manchester United</nombre_equipo>
+				<inicio>2021</inicio>
+				<fin>2022</fin>
+                <logros/>
+            </equipo>
+            <equipo>
+				<nombre_equipo>Al-Nassr</nombre_equipo>
+				<inicio>2022</inicio>
+				<fin/>
+                <logros/>
+            </equipo>
+        </equipos_anteriores>
+        <posiciones>
+            <principal>
+                <posicion>delantero</posicion>
+            </principal>
+            <secundarias>
+                <posicion>extremo</posicion>
+                <posicion>segundo delantero</posicion>
+            </secundarias>
+        </posiciones>
+    </jugador>
+</jugadores>
+
