@@ -1,0 +1,175 @@
+<alumno>
+    <nombre>Olga</nombre> 
+    <dirección>El Percebe 13</dirección>
+</alumno>
+
+<!ELEMENT alumno (nombre, apellidos, direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dirección (#PCDATA)>
+
+
+<alumno edad=15>
+    <nombre>Olga</nombre> 
+    <apellidos>Velarde Cobo</apellidos>
+    <dirección>El Percebe 13</dirección>
+</alumno>
+
+<!ELEMENT alumno (nombre, apellidos, direccion)>
+<!ATTLIST alumno edad CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT dirección (#PCDATA)>
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes?>
+<!DOCTYPE alumno>
+<alumno edad="22">Olga Velarde Cobo</alumno>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="alumno" type="xs:string"/>
+</xs:schema>
+
+
+
+1.- Creación de un elemento simple de nombre edad que representa la edad de un alumno de la ESO, por tanto su rango está entre los 12 y los 18 años.
+<xs:element name="edad">
+ <xs:simpleType>
+     <xs:restriction base="xs:positiveInteger">
+         <xs:minInclusive value="12"/>
+         <xs:maxInclusive value="18"/>
+     </xs:restriction>
+ </xs:simpleType>
+</xs:element>
+
+2.- Creación de una lista con los días de la semana en letras.
+<xs:simpleType name="dia_semana" base="xs:string" derivedBy="list"/>
+    <dia_semana>Lunes Martes Miercoles Jueves Viernes Sabado Domingo<dia_semana>
+</xs:simpleType>
+
+3. Creación de un elemento compuesto de nombre alumno, formado por los elementos nombre, apellidos, web personal.
+<xs:complexType name="alumno">
+    <xs:secuence>
+        <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="apellidos" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="web" type="xs:string" minOccurs="0" maxOccurs="5">
+        <xs:complexType>
+            <xs:attribute name="href" type="xs:string"/>
+        </xs:complexType>
+        </xs:element>
+    <xs:secuence>
+ </xs:complexType>
+
+
+<?xml version="1.0" encoding="ISO-8859-1"? >
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="file:/D:/ubicación/del archivo/alumnos.xsd">
+    <alumno>
+        <nombre>Jose Ramón</nombre>
+        <apellidos>García González</apellidos>
+        <direccion>
+            <domicilio>El Pez, 12</domicilio>
+            <codigo_postal>85620</código_postal>
+            <localidad>Suances</localidad>
+            <provincia>Cantabria</provincia>
+        </direccion>
+        <contactar>
+            <telf._casa>985623165</telf._casa>
+            <telf._movil>611233544</telf._movil>
+            <telf._trabajo>965847536</telf._trabajo>
+            <email>pepito@educadistancia.com</email>
+        </contactar>
+    </alumno>
+    <alumno>
+        <nombre>Carlos</nombre>
+        <apellidos>López Pérez</apellidos>
+        <direccion>
+            <domicilio>El Cangrejo, 25</domicilio>
+            <codigo_postal>86290</código_postal>
+            <localidad>Santillana</localidad>
+            <provincia>Cantabria</provincia>
+        </direccion>
+        <contactar>
+            <telf._casa>931132565</telf._casa>
+            <telf._movil>623863544</telf._movil>
+            <telf._trabajo>984657536</telf._trabajo>
+            <email>carlos@educadistancia.com</email>
+        </contactar>
+    </alumno>
+</alumnos>
+
+
+
+
+Define un esquema correspondiente a un documento XML para estructurar la información personal sobre los alumnos de un centro educativo.
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- elemento raíz -->
+    <xs:element name="alumnos" type="datosAlum"/>
+    <!-- Definicion del tipo datosAlum -->
+    <xs:complexType name="datosAlum">
+        <xs:sequence>
+            <xs:element name="alumno" type="datos" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definicion del tipo datos -->
+    <xs:complexType name="datos">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1"  maxOccurs="1"/>
+            <xs:element name="apellidos" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="direccion" type="datosDireccion" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="contactar" type="datosContactar" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <!-- Atributos  del elemento usuario -->
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="datosDireccion">
+        <xs:sequence>
+            <xs:element name="domicilio" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="codigo_postal" minOccurs="0" maxOccurs="1" >
+                <xs:complexType>
+                        <xs:attribute name="cp" type="xsd:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="localidad" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="provincia" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="datosContactar">
+        <xs:sequence>
+            <xs:element name="telf_casa" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="telf_movil" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="telf_trabajo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="email" minOccurs="0" maxOccurs="unbounded" >
+                <xs:complexType>
+                    <xs:attribute name="href" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+           </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+
+
+
+Son los distintos valores que puede tomar el atributo type cuando se declara un elemento o un atributo y representan el tipo de dato que tendrá el elemento o atributo asociado a ese type en el documento XML.
+
+Algunos de estos valores predefinidos son:
+    string, se corresponde con una cadena de caracteres UNICODE.
+    boolean, representa valores lógicos, es decir que solo pueden tomar dos valores, true o false.
+    integer, número entero positivo o negativo.
+    positiveInteger, número entero positivo.
+    negativeInteger, número entero negativo.
+    decimal, número decimal, por ejemplo, 8,97.
+    dateTime, representa una fecha y hora absolutas.
+    duration, representa una duración de tiempo expresado en años, meses, días, horas, minutos segundos. El formato utilizado es: PnYnMnDTnHnMnS. Por ejemplo para representar una duración de 2 años, 4meses, 3 días, 5 horas, 6 minutos y 10 segundos habría que poner: P2Y4M3DT5H6M7S. Se pueden omitir los valores nulos, luego una duración de 2 años será P2Y. Para indicar una duración negativa se pone un signo – precediendo a la P.
+    time, hora en el formato hh:mm:ss.
+    date, fecha en formato CCYY-MM-DD.
+    gYearMonth, representa un mes de un año determinado mediante el formato CCYY-MM.
+    gYear, indica un año gregoriano, el formato usado es CCYY.
+    gMothDay, representa un día de un mes mediante el formato –MM-DD.
+    gDay, indica el ordinal del día del mes mediante el formato –DD, es decir el 4º día del mes será –04.
+    gMonth, representa el mes mediante el formato –MM. Por ejemplo, febrero es –02.
+    anyURI, representa una URI.
+    language, representa los identificadores de lenguaje, sus valores están definidos en RFC 1766.
+    ID, IDREF, ENTITY, NOTATION, MTOKEN. Representan lo mismo que en los DTD

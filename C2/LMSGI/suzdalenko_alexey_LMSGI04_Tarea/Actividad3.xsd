@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.ejemplo.com/jugadores"
+           xmlns="http://www.ejemplo.com/jugadores"
+           elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="es">
+      Schema para el documento jugadores.xml
+      Fecha de creación: 2024-03-08
+      Autores: [Alexey Suzdalenko]
+      Curso Escolar: [2024/1 curso]
+    </xs:documentation>
+  </xs:annotation>
+
+  <!-- Ssimples -->
+  <xs:simpleType name="TipoId">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="J[0-9]{4}/[0-9]{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoFecha">
+    <xs:restriction base="xs:date"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoAltura">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="150"/>
+      <xs:maxInclusive value="210"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoPeso">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="60"/>
+      <xs:maxInclusive value="90"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoEstadistica">
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoYear">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="2000"/>
+      <xs:maxInclusive value="2100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TipoPosicion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="portero"/>
+      <xs:enumeration value="defensa"/>
+      <xs:enumeration value="mediocentro"/>
+      <xs:enumeration value="delantero"/>
+      <xs:enumeration value="extremo"/>
+      <xs:enumeration value="mediapunta"/>
+      <xs:enumeration value="segundo_delantero"/>
+      <xs:enumeration value="interior"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Elemento root -->
+  <xs:element name="jugadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="jugador" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_jugador" type="xs:string"/>
+              <xs:element name="fecha_nacimiento" type="TipoFecha"/>
+              <xs:element name="nacionalidad" type="xs:string"/>
+              <xs:element name="altura" type="TipoAltura"/>
+              <xs:element name="peso" type="TipoPeso"/>
+              <xs:element name="estadisticas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="partidos_jugados" type="TipoEstadistica"/>
+                    <xs:element name="goles_anotados" type="TipoEstadistica"/>
+                    <xs:element name="asistencias" type="TipoEstadistica"/>
+                    <xs:element name="tarjetas_amarillas" type="TipoEstadistica"/>
+                    <xs:element name="tarjetas_rojas" type="TipoEstadistica"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="equipos_anteriores">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="equipo" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre_equipo" type="xs:string"/>
+                          <xs:element name="inicio" type="TipoYear"/>
+                          <xs:element name="fin" type="TipoYear" minOccurs="0"/>
+                          <xs:element name="logros">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="logro" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="titulo" type="xs:string"/>
+                                      <xs:element name="veces_conquistado" type="TipoEstadistica"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="posiciones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="principal">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="posicion" type="TipoPosicion"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="secundarias">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="posicion" type="TipoPosicion" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id_jugador" type="TipoId" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

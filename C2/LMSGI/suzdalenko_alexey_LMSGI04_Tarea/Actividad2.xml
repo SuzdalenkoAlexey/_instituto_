@@ -1,35 +1,4 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<!DOCTYPE jugadores [
-    <!ELEMENT jugadores (jugador+)>
-    <!ELEMENT jugador (nombre_jugador, fecha_nacimiento, nacionalidad, altura, peso, estadisticas, equipos_anteriores, posiciones)>
-    <!ATTLIST jugador id CDATA #REQUIRED>
-
-    <!ELEMENT nombre_jugador (#PCDATA)>
-    <!ELEMENT fecha_nacimiento (#PCDATA)>
-    <!ELEMENT nacionalidad (#PCDATA)>
-    <!ELEMENT altura (#PCDATA)>
-    <!ELEMENT peso (#PCDATA)>
-
-    <!ELEMENT estadisticas (partidos_jugados, goles_anotados, asistencias, tarjetas_amarillas, tarjetas_rojas)>
-    <!ELEMENT partidos_jugados (#PCDATA)>
-    <!ELEMENT goles_anotados (#PCDATA)>
-    <!ELEMENT asistencias (#PCDATA)>
-    <!ELEMENT tarjetas_amarillas (#PCDATA)>
-    <!ELEMENT tarjetas_rojas (#PCDATA)>
-
-    <!ELEMENT equipos_anteriores (equipo+)>
-    <!ELEMENT equipo (nombre_equipo, inicio, fin?, logros*)>
-    <!ELEMENT nombre_equipo (#PCDATA)>
-    <!ELEMENT inicio (#PCDATA)>
-    <!ELEMENT fin (#PCDATA)>
-    <!ELEMENT logros (logro*)>
-    <!ELEMENT logro (titulo, veces_conquistado)>
-
-    <!ELEMENT posiciones (principal, secundarias)>
-    <!ELEMENT principal (posicion)>
-    <!ELEMENT secundarias (posicion+)>
-    <!ELEMENT posicion (#PCDATA)>
-]>
+<!DOCTYPE jugadores SYSTEM "Actividad1.dtd">
 <jugadores>
     <jugador id="J0001/01">
 		<nombre_jugador>Lionel Messi</nombre_jugador>
