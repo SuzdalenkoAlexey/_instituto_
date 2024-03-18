@@ -26,3 +26,31 @@ nano visudo -> edit visudo "%sudo ALL=(ALL:ALL) ALL"
 
 ls -ld /mnt/disco-backup -> mostrar permisos de carpeta
 sudo chmod a+w /mnt/disco-backup -> dar permisos de escritura a todos los usuarios
+
+
+# internet ADAPTADOR PUENTE
+IFCONFIG not found
+apt install net-tools
+
+VBOXUSER IS NOT IN THE SUDOERS FILE
+sudo visudo
+vboxuser ALL=(ALL:ALL) ALL
+
+settings>network>manual
+192.168.1.137 255.255.255.0 192.168.1.1  <- en ubuntu pongo
+192.168.1.131 255.255.255.0 192.168.1.1  <- en windows existian
+
+
+# Explica  que hay hacer para conseguir dividir red en 5 subredes. Partimos de que red es la
+192.168.23.0 y una máscara de red inicial de 255.255.255.0
+
+
+
+
+
+
+
+
+
+
+
