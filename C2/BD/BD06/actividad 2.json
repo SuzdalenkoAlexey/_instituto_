@@ -1,0 +1,7 @@
+TRIGER y CHECK  La longitud de la clave de un agente no puede ser inferior a 6.             
+TRIGER y CHECK  La habilidad de un agente debe estar comprendida entre 0 y 9 (ambos inclusive).
+TRIGER y CHECK  La categoría de un agente sólo puede ser igual a 0, 1 o 2.
+
+TRIGER  Si un agente tiene categoría 2 no puede pertenecer a ninguna familia y debe pertenecer a una oficina.  
+TRIGER  Si un agente tiene categoría 1 no puede pertenecer a ninguna oficina y debe pertenecer  a una familia.  
+TRIGER  Todos los agentes deben pertenecer  a una oficina o a una familia pero nunca a ambas a la vez.
