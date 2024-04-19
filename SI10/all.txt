@@ -1,0 +1,47 @@
+REDES: NAT y RED INTERNA aparecio enp0s8 despues de sudo nano /etc/netplan/00-installer-config.yaml
+
+vboxuser no esta en el archivo sudoers:
+    su
+    sudo visudo
+    vboxuser ALL=(ALL:ALL) ALL
+
+SERVER01
+sudo apt update
+sudo apt upgrade
+
+sudo nano /proc/sys/net/ipv4/ip_forward
+1
+
+sudo nano /etc/netplan/00-installer-config.yaml
+    enp0s8:
+     addresses: 
+        -192.168.10.1/24
+     
+sudo chmod 664 /etc/netplan/00-installer-config.yaml
+netplan apply
+sudo nano /etc/sysctl.conf
+    descomentar net.ipv4.ip_forward=1
+sudo sysctl -p
+sudo apt install iptables-persistent
+sudo iptables -t nat -A POSTROUTING -s 192.168.10.0/24 -d 0/0 -j MASQUERADE !!! TENGO INTERNET EN LAS 2 MAQUINAS !!!
+
+iptables-save > /etc/iptables/rules.v4
+
+
+
+CLIENTE01
+he cambiado a manual desde DHCP ip=192.168.10.2 mascara=255.255.255.0 puerta=192.168.10.1
+sudo systemctl restart systemd-networkd
+
+
+añadir usuario ubuntu SERVER01
+    sudo adduser asuzdalenko01
+    sudo usermod -aG sudo asuzdalenko01
+    id asuzdalenko01
+
+CLIENTE01 añado usuario 
+    desde el modo ventata grafica
+
+
+
+
