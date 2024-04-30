@@ -9,7 +9,7 @@ sqlplus c##alexey/alexey;
 connect c##alexey/alexey;
 
 
-drop user c##agencia cascade;
-create user c##agencia identified by agencia default tablespace users;
-grant connect,resource,dba to c##agencia;
-conn c##agencia/agencia
+sqlplus sys as sysdba
+create user suzdalenko identified by suzdalenko default tablespace users;
+grant connect, resource, DBA to suzdalenko;
+conn suzdalenko/suzdalenko;
