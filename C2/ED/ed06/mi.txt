@@ -1,0 +1,31 @@
+Representa el enunciado posterior con un diagrama de casos de uso, y envíalo incrustado en un documento PDF.
+
+Una empresa gestiona un conjunto de inmuebles, que administra en calidad de
+propietraria. Cada inmueble puede ser bien un local (loca comercial, oficinas y etc), un 
+apartamento o bien un edificio que a su vez tiene pisos y locales. Como el numero de
+inmuebles que la empresa gestiona no es numero fijo, la aplicacion debe permitir tanto
+indroducir inmuebles nuevos, asi como darlos de baja, modificarlos y consultarlos.
+
+Asimismo, que una empresa administre un edificio  determinado no implica que gestione
+todos sus apartamentos y locales, por lo que la aplicacion tambien debera permitir
+introducir nuevos apartamentos o locales, darlos de baja, modificarlos y hacer consultas 
+sobre ellos.
+
+Cualquer persona que tenga nomina, un aval bancario, un contrato de trabajo o venga
+avalado por otra persona puede alquilar el edificio completo o alguno de los apartamentos
+o locales que no esten ya alquilados y postreriormente desalquilado. Por ello, deberian
+poder ser dados de alta, si son nuevos inquilinos, con sus datos correspondientes
+(nombre, dni, edad, sexo, ...) poder modificarlos, darlos de baja, consultarlos, etc.
+
+La aplicacion ofrece acceso web para que un inquilino puede modificar o consultar sus
+datos, pero no darse de baja o de alta. Para la realizacion de cualquera de estas
+operaciones es necesaria la identificacion por parte del inquilino.
+
+
+ELEMENTOS DE DIAGRAMA DE CASOS DE USO:
+    - ACTORES      -> usuario que interactúan con el sistema, sistema informatico, empresa
+    - CASOS DE USO -> especifica una secuencia de acciones que el sistema puede llevar a cabo, y que producen un resultado observable de valor para un actor concreto
+                      sacar dinero > INCLUDES > validar pin     (se valida antes de hacer caso se uso)
+                      sacar dinero > EXTENDS  > imprimir ticket (se hace por si solo)
+    - RELACIONES
+
