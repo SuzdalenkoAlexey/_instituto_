@@ -1,4 +1,5 @@
-REDES: NAT y RED INTERNA aparecio enp0s8 despues de sudo nano /etc/netplan/00-installer-config.yaml
+REDES: NAT y RED INTERNA 
+aparecio enp0s8 despues de sudo nano /etc/netplan/00-installer-config.yaml
 
 vboxuser no esta en el archivo sudoers:
     su

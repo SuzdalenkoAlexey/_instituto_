@@ -5,8 +5,8 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 public class tarea {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://192.168.1.131:3306";
-        String user = "usuario";
+        String url      = "jdbc:mysql://192.168.1.131:3306";
+        String user     = "usuario";
         String password = "Toshiba123";
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");

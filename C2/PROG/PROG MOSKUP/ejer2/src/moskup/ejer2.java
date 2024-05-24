@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package moskup;
-
-/**
- *
- * @author alexei
- */
+import java.awt.Dimension;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 public class ejer2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+         SwingUtilities.invokeLater(() -> {
+                JFrame frame = new JFrame("Tarea 11");
+                NewJPanel panel = new NewJPanel();
+                panel.setPreferredSize(new Dimension(777, 500));
+                frame.getContentPane().add(panel);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setVisible(true);
+            });
+    }   
 }
