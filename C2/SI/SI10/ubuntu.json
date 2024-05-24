@@ -27,10 +27,11 @@ sudo apt install iptables-persistent
 sudo iptables -t nat -A POSTROUTING -s 192.168.10.0/24 -d 0/0 -j MASQUERADE !!! TENGO INTERNET EN LAS 2 MAQUINAS !!!
 
 iptables-save > /etc/iptables/rules.v4
+sudo chmod o+w /etc/iptables/rules.v4
 
 
 
-CLIENTE01
+CLIENTE01 UBUNTU red>configuracion
 he cambiado a manual desde DHCP ip=192.168.10.2 mascara=255.255.255.0 puerta=192.168.10.1
 sudo systemctl restart systemd-networkd
 
@@ -59,3 +60,18 @@ network:
         - 192.168.10.1/24
   version: 2
 
+
+
+
+UBUNTU SERVER -> su putin
+  crear usuario                 : adduser putin
+  añadir usuario al sudo grupo  : usermod -aG sudo putin
+  mostrar ususarios             : who (quien soy), cat /etc/passwd (mostrar)
+  crear grupo                   : sudo addgroup putinteams               
+  incluir usuario en grupo      : sudo adduser putin putinteams
+  mostrar listado de grupos     : cat /etc/group
+
+  instalar mysql -> sudo apt update
+                    sudo apt upgrade
+                    sudo apt install mysql-server
+                    sudo systemctl status mysql
