@@ -1,0 +1,19 @@
+Actividad 1: 
+Escribe en un documento de texto .txt las siguientes rutas XPATH válidas:
+a)     Nombre de los grados con plan anterior al 2002.
+b)     Nombre y plan de los grados de la Facultad de Ciencias.
+c)      Créditos teóricos totales de las asignaturas cuya titulación es “c01”
+d)      Asignaturas del Grado en Informática
+e)      Nombre de los grados con alguna asignatura que no tiene prácticas.
+f)       Nombre del grado de la asignatura de Bases de Datos
+g)       Nombre de los centros que tienen asignaturas opcionales en el 2º trimestre y cuyos créditos superen los 250.
+
+
+Actividad 2:
+Construye una plantilla XSL y transforma el documento Universidades.xml en un documento HTML que contenga la siguiente información:
+    Lista con los grados que se cursan en la Facultad de Ciencias, mostrando su código entre paréntesis, el nombre del grado y el año del plan.
+    Una tabla con el listado de asignaturas troncales del segundo trimestre de la Facultad de Ciencias.
+        En la tabla debe aparecer el código de la asignatura, su nombre, la titulación a la que pertenece, los créditos teóricos, si tiene prácticas y un comentario.
+        El comentario irá en función del número de créditos teóricos. Aparecerá “Corta” cuando sean menos de 2 créditos; “Media” cuando sean entre 2 y 5 créditos y “Larga” para más de 5 créditos. De no disponer de este dato deberá figurar “Sin información”
+        Se muestra ordenada de menor a mayor número de créditos.
+    La plantilla enlazará con un documento CSS, llamado estilo.css. Se utilizará obligatoriamente un contenedor y deberá centrarse horizontalmente la página dejando ciertos márgenes. Define el estilo de las cabeceras y de la tabla para conseguir esta apariencia en el html5.
