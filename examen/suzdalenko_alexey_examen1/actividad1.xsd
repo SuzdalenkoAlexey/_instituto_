@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.ejemplo.com/Cuidades"
+           xmlns="http://www.ejemplo.com/Cuidades"
+           elementFormDefault="qualified">
+
+    <xs:annotation>
+        <xs:documentation xml:lang="es">
+          Schema para el documento Cuidades.xml
+          Fecha de creación: 2024-05-28
+          Autores: [Alexey Suzdalenko]
+          Curso Escolar: [2024/2 curso]
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Simples -->
+    <xs:simpleType name="TypoCCA">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="CA[0-1]{2}/[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoNumHab">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="30000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoNumHijo">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoPorcentaje">
+        <xs:restriction base="xs:positiveDouble">
+            <xs:min value="15000" />
+            <xs:max value="50000" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoRenta">
+        <xs:restriction base="xs:integer">
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoSiglo">
+        <xs:restriction base="xs:string">
+            <xs:stringInArray value="I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII, XIII, XIV, XV, XVI, XVII, XVIII, IX y XX"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Estadisticas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Demograficas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="NumeroHabitantes" type="TipoNumHab" />
+                        <xs:element name="NumeroHijosPorMujer" type="TipoNumHijo" />
+                        <xs:element name="PorcentajeMayores65" type="TipoPorcentaje" />
+                    <xs:sequence>
+                <xs:complexType>
+            </xs:element>
+            <xs:element name="Economicas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="RentaPerCapita" type="TipoRenta" />
+                        <xs:element name="TasaDesempleo" type="xs:double" />
+                    <xs:sequence>
+                <xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PatrimonioArquitectonico">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Elemento" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Nombre" type="xs:string" />
+                        <xs:element name="SigloOrigen" type="TipoSiglo" />
+                    <xs:sequence>
+                <xs:complexType>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Elemento root -->
+    <xs:element name="Ciudades">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ciudad" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nombre" type="xs:string"/>
+                            <xs:element name="CCAA" type="TypoCCA"/>
+                            <xs:element ref="Estadisticas"/>
+                            <xs:element ref="PatrimonioArquitectonico"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

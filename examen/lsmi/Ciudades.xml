@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <Ciudades>
+		<Ciudad>
+            <Nombre>Sevilla</Nombre>
+            <CCAA>CA01</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>688711</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>19.7</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>19000</RentaPerCapita>
+                    <TasaDesempleo>21.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Sevilla</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Real Alcázar</Nombre>
+                    <SigloOrigen>X</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Torre del Oro</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Granada</Nombre>
+			      <CCAA>CA01</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>232462</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>20.1</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>18000</RentaPerCapita>
+                    <TasaDesempleo>22.3</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Alhambra</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Capilla Real</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Albaicín</Nombre>
+                    <SigloOrigen>XI</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Córdoba</Nombre>
+			      <CCAA>CA01</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>325708</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.1</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>21.3</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>17500</RentaPerCapita>
+                    <TasaDesempleo>24.1</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Mezquita-Catedral</Nombre>
+                    <SigloOrigen>VIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Alcázar de los Reyes Cristianos</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Puente Romano</Nombre>
+                    <SigloOrigen>I</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Barcelona</Nombre>
+			      <CCAA>CA02</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>1620343</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.4</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>18.4</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>28000</RentaPerCapita>
+                    <TasaDesempleo>12.1</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Sagrada Familia</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Parque Güell</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Barrio Gótico</Nombre>
+                    <SigloOrigen>IV</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Girona</Nombre>
+			      <CCAA>CA02</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>101852</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>19.2</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>25000</RentaPerCapita>
+                    <TasaDesempleo>11.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Girona</Nombre>
+                    <SigloOrigen>XI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Call Jueu</Nombre>
+                    <SigloOrigen>XII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Baños Árabes</Nombre>
+                    <SigloOrigen>XII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Lleida</Nombre>
+			      <CCAA>CA02</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>138144</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>17.9</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>23000</RentaPerCapita>
+                    <TasaDesempleo>13.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>La Seu Vella</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Castillo de Gardeny</Nombre>
+                    <SigloOrigen>XII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Iglesia de San Lorenzo</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Madrid</Nombre>
+			      <CCAA>CA03</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>3266126</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.5</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>16.9</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>35000</RentaPerCapita>
+                    <TasaDesempleo>11.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Palacio Real</Nombre>
+                    <SigloOrigen>XVIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Plaza Mayor</Nombre>
+                    <SigloOrigen>XVII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Museo del Prado</Nombre>
+                    <SigloOrigen>XIX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Alcalá de Henares</Nombre>
+            <CCAA>CA03</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>195649</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>15.7</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>24000</RentaPerCapita>
+                    <TasaDesempleo>12.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Universidad de Alcalá</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Catedral-Magistral de Alcalá de Henares</Nombre>
+                    <SigloOrigen>XV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Corral de Comedias</Nombre>
+                    <SigloOrigen>XVII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Getafe</Nombre>
+			      <CCAA>CA03</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>180747</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.4</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>14.2</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>22000</RentaPerCapita>
+                    <TasaDesempleo>13.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Cerro de los Ángeles</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Catedral de La Magdalena</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Hospitalillo de San José</Nombre>
+                    <SigloOrigen>XVII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Santiago de Compostela</Nombre>
+            <CCAA>CA05</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>97539</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>21.1</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>22000</RentaPerCapita>
+                    <TasaDesempleo>10.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Santiago</Nombre>
+                    <SigloOrigen>XI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Monasterio de San Martín Pinario</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Hospital de los Reyes Católicos</Nombre>
+                    <SigloOrigen>XV</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Vigo</Nombre>
+			      <CCAA>CA05</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>295364</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>20.8</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>23000</RentaPerCapita>
+                    <TasaDesempleo>12.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Castillo del Castro</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Iglesia de Santa María</Nombre>
+                    <SigloOrigen>XIX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Puente de Rande</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>A Coruña</Nombre>
+			      <CCAA>CA05</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>245711</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>22.3</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>24000</RentaPerCapita>
+                    <TasaDesempleo>11.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Torre de Hércules</Nombre>
+                    <SigloOrigen>I</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Castillo de San Antón</Nombre>
+                    <SigloOrigen>XVII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Iglesia de Santiago</Nombre>
+                    <SigloOrigen>XII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Bilbao</Nombre>
+			      <CCAA>CA07</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>345141</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.4</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>21.0</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>30000</RentaPerCapita>
+                    <TasaDesempleo>13.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Museo Guggenheim</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Catedral de Santiago</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Puente Colgante</Nombre>
+                    <SigloOrigen>XIX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>San Sebastián</Nombre>
+            <CCAA>CA07</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>188102</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.5</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>23.1</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>32000</RentaPerCapita>
+                    <TasaDesempleo>10.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Peine del Viento</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Teatro Victoria Eugenia</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Palacio de Miramar</Nombre>
+                    <SigloOrigen>XIX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Vitoria-Gasteiz</Nombre>
+			      <CCAA>CA07</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>252571</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.4</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>19.6</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>29000</RentaPerCapita>
+                    <TasaDesempleo>11.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Santa María</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Plaza de la Virgen Blanca</Nombre>
+                    <SigloOrigen>XVIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Palacio de Ajuria Enea</Nombre>
+                    <SigloOrigen>XX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Valencia</Nombre>
+			      <CCAA>CA04</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>791413</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>18.7</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>25000</RentaPerCapita>
+                    <TasaDesempleo>14.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Valencia</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Torre del Micalet</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>La Lonja de la Seda</Nombre>
+                    <SigloOrigen>XV</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Alicante</Nombre>
+            <CCAA>CA04</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>337482</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>19.1</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>24000</RentaPerCapita>
+                    <TasaDesempleo>15.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Castillo de Santa Bárbara</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Basílica de Santa María</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Concatedral de San Nicolás</Nombre>
+                    <SigloOrigen>XVII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Castellón de la Plana</Nombre>
+			      <CCAA>CA04</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>171728</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>18.6</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>23000</RentaPerCapita>
+                    <TasaDesempleo>14.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Concatedral de Santa María</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Torre El Fadrí</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Ermita de la Magdalena</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Palma</Nombre>
+            <CCAA>CA15</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>409661</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.2</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>17.6</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>27000</RentaPerCapita>
+                    <TasaDesempleo>11.5</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Catedral de Palma</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Castillo de Bellver</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Palacio de la Almudaina</Nombre>
+                    <SigloOrigen>XIII</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Ibiza</Nombre>
+			      <CCAA>CA15</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>49978</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.3</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>16.4</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>26000</RentaPerCapita>
+                    <TasaDesempleo>13.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Dalt Vila</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Castillo de Ibiza</Nombre>
+                    <SigloOrigen>XVI</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+        <Ciudad>
+            <Nombre>Manacor</Nombre>
+			      <CCAA>CA15</CCAA>
+            <Estadisticas>
+                <Demograficas>
+                    <NumeroHabitantes>42961</NumeroHabitantes>
+                    <NumeroHijosPorMujer>1.4</NumeroHijosPorMujer>
+                    <PorcentajeMayores65>18.1</PorcentajeMayores65>
+                </Demograficas>
+                <Economicas>
+                    <RentaPerCapita>25000</RentaPerCapita>
+                    <TasaDesempleo>12.0</TasaDesempleo>
+                </Economicas>
+            </Estadisticas>
+            <PatrimonioArquitectonico>
+                <Elemento>
+                    <Nombre>Torre dels Enagistes</Nombre>
+                    <SigloOrigen>XIV</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Basílica de Son Peretó</Nombre>
+                    <SigloOrigen>V</SigloOrigen>
+                </Elemento>
+                <Elemento>
+                    <Nombre>Iglesia de Nostra Senyora dels Dolors</Nombre>
+                    <SigloOrigen>XIX</SigloOrigen>
+                </Elemento>
+            </PatrimonioArquitectonico>
+        </Ciudad>
+</Ciudades>

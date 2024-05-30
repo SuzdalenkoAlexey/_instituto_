@@ -1,0 +1,32 @@
+body{
+    width: 80%;
+    margin-left: 10%;
+}
+
+h2{
+    margin-top: 111px;
+    color:rgb(214, 162, 94)
+}
+table{
+    margin: 33px;
+
+}
+html{
+    background-color: rgb(163, 248, 248);
+}
+.wrapper{
+
+    background-color: white;
+}
+table{
+    background-color: white;
+}
+td{
+    border: 1px solid gray;
+}
+.inner{
+    text-align: center;
+}
+h2{
+    padding-top: 66px;
+}

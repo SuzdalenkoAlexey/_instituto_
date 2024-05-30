@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ComunidadesAutonomas>
+    <ComunidadAutonoma codigo="CA01">
+        <NombreCA>Andalucía</NombreCA>
+        <NumeroProvincias>8</NumeroProvincias>
+        <NumeroHabitantes>8414240</NumeroHabitantes>
+        <Extension>87599</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA02">
+        <NombreCA>Cataluña</NombreCA>
+        <NumeroProvincias>4</NumeroProvincias>
+        <NumeroHabitantes>7669950</NumeroHabitantes>
+        <Extension>32114</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA03">
+        <NombreCA>Comunidad de Madrid</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>6779888</NumeroHabitantes>
+        <Extension>8029</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA04">
+        <NombreCA>Comunidad Valenciana</NombreCA>
+        <NumeroProvincias>3</NumeroProvincias>
+        <NumeroHabitantes>5045634</NumeroHabitantes>
+        <Extension>23255</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA05">
+        <NombreCA>Galicia</NombreCA>
+        <NumeroProvincias>4</NumeroProvincias>
+        <NumeroHabitantes>2699499</NumeroHabitantes>
+        <Extension>29574</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA06">
+        <NombreCA>Castilla y León</NombreCA>
+        <NumeroProvincias>9</NumeroProvincias>
+        <NumeroHabitantes>2409245</NumeroHabitantes>
+        <Extension>94223</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA07">
+        <NombreCA>País Vasco</NombreCA>
+        <NumeroProvincias>3</NumeroProvincias>
+        <NumeroHabitantes>2207776</NumeroHabitantes>
+        <Extension>7234</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA08">
+        <NombreCA>Canarias</NombreCA>
+        <NumeroProvincias>2</NumeroProvincias>
+        <NumeroHabitantes>2233915</NumeroHabitantes>
+        <Extension>7447</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA09">
+        <NombreCA>Castilla-La Mancha</NombreCA>
+        <NumeroProvincias>5</NumeroProvincias>
+        <NumeroHabitantes>2046881</NumeroHabitantes>
+        <Extension>79463</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA10">
+        <NombreCA>Región de Murcia</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>1494442</NumeroHabitantes>
+        <Extension>11313</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA11">
+        <NombreCA>Aragón</NombreCA>
+        <NumeroProvincias>3</NumeroProvincias>
+        <NumeroHabitantes>1319291</NumeroHabitantes>
+        <Extension>47720</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA12">
+        <NombreCA>Extremadura</NombreCA>
+        <NumeroProvincias>2</NumeroProvincias>
+        <NumeroHabitantes>1067710</NumeroHabitantes>
+        <Extension>41634</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA13">
+        <NombreCA>Asturias</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>1018789</NumeroHabitantes>
+        <Extension>10603</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA14">
+        <NombreCA>Navarra</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>649946</NumeroHabitantes>
+        <Extension>10391</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA15">
+        <NombreCA>Baleares</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>1187808</NumeroHabitantes>
+        <Extension>4992</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA16">
+        <NombreCA>Cantabria</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>582905</NumeroHabitantes>
+        <Extension>5321</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA17">
+        <NombreCA>La Rioja</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>319914</NumeroHabitantes>
+        <Extension>5045</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma codigo="CA18">
+        <NombreCA>Ceuta</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>84777</NumeroHabitantes>
+        <Extension>18.5</Extension>
+    </ComunidadAutonoma>
+    <ComunidadAutonoma> codigo="CA19"
+        <NombreCA>Melilla</NombreCA>
+        <NumeroProvincias>1</NumeroProvincias>
+        <NumeroHabitantes>86787</NumeroHabitantes>
+        <Extension>12.3</Extension>
+    </ComunidadAutonoma>
+</ComunidadesAutonomas>
